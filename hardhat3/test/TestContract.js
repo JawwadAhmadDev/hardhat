@@ -13,23 +13,23 @@ describe("Test contract", function () {
         const testToken = await TestContract.deploy(student);
 
         const returnedStudent = await testToken.student();
-        console.log('returnedStudent', returnedStudent);
 
-        // expect(name).to.equal("jawwad");
+        expect(returnedStudent.name).to.equal("jawwad");
     });
 
-    // it("Name set successfully", async function () {
+    it("Name set successfully", async function () {
 
-    //     const [owner] = await ethers.getSigners();
+        const [owner] = await ethers.getSigners();
 
-    //     const TestContract = await ethers.getContractFactory("TestContract");
+        const TestContract = await ethers.getContractFactory("TestContract");
 
-    //     const student = ['jawwad', 1]; // to call constructor having parameter of structure type, we need to pass array.
+        const student = ['jawwad', 1]; // to call constructor having parameter of structure type, we need to pass array.
 
-    //     const testToken = await TestContract.deploy(student);
+        const testToken = await TestContract.deploy(student);
 
-    //     const name = await testToken.setName('hammad');
+        await testToken.setStudent(['hammad', 2]);
+        const returnedStudent = await testToken.getStudent();
 
-    //     expect(await testToken.name()).to.equal("hammad"); 
-    // });
+        expect(await returnedStudent.name).to.equal("hammad"); 
+    });
 });
