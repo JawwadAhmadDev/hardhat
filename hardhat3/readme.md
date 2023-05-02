@@ -3,6 +3,7 @@
 1. npm init -y
 2. npm install --save-dev hardhat (to install hardhat in the project)
 3. npx hardhat (to initialize hardhat in the project)
+4. create a repository named 'contracts' in which we will create all contracts.
 
 
 ## Description of the project
