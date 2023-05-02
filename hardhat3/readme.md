@@ -5,6 +5,7 @@
 3. npx hardhat (to initialize hardhat in the project)
 4. create a repository named 'contracts' in which we will create all contracts.
 5. create a sample contract having parameterized constructor taking structure.
+6. npx hardhat compile (to compile the contract).
 
 
 ## Description of the project
