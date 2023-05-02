@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
-const { mnemonic } = require('./secrets.json');
+require("@nomiclabs/hardhat-etherscan");
+const { mnemonic, mnemonic } = require('./secrets.json');
 
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -23,6 +24,11 @@ module.exports = {
       gasPrice: 20000000000,
       accounts: {mnemonic: mnemonic}
     }
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://bscscan.com/
+    apiKey: bscscanApiKey 
   },
   solidity: {
   version: "0.8.18",
