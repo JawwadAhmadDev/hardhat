@@ -1,4 +1,6 @@
 
+# Smart contract address which is verified by following this route.
+[https://testnet.bscscan.com/address/0x17506eb5eac077dd208befde77fe722cf965e75f#code]
 ## Steps to deploy and verify contract on bscscan using hardhat
 1. npm init -y
 2. npm install --save-dev hardhat (to install hardhat in the project)
@@ -17,6 +19,12 @@
 13. npx hardhat run --network testnet scripts/deploy.js (run this command to deploy contract on bscscan testnet)
 14. npm install --save-dev @nomiclabs/hardhat-etherscan (to verify we have to add this package)
 15. configure hardhat.config.js file for verifying contract on bscscan. for detial see the last commit changes
+16. npx buidler verify --network mainnet DEPLOYED_CONTRACT_ADDRESS "Constructor argument 1" (run this command to verify the deployed contract).
+17. Because we have to passed an array to constructor, wo we will store parameters in a separate file name arguments.js and then call that file in the above command.
+18. if we have stored arguments in separate file, then run the following command (npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS)
+19. I have verified this contract by running the following command:  npx hardhat verify --network testnet --constructor-args arguments.js 0x17506eB5eAc077DD208bEfdE77FE722cF965E75F
+
+
 
 
 
