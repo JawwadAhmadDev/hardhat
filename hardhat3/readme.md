@@ -15,6 +15,8 @@
 11. configure hardhat with bscscan to deploy our contract on bscscan. [https://docs.bnbchain.org/docs/hardhat-new/]
 12. create a repository named 'scripts', in which we will have store scripts to deploy contract on bscscan.
 13. npx hardhat run --network testnet scripts/deploy.js (run this command to deploy contract on bscscan testnet)
+14. npm install --save-dev @nomiclabs/hardhat-etherscan (to verify we have to add this package)
+15. configure hardhat.config.js file for verifying contract on bscscan. for detial see the last commit changes
 
 
 
