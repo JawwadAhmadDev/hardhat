@@ -11,7 +11,9 @@
 9. require("@nomicfoundation/hardhat-toolbox"); (add this line to hardhat.config.js file)
 10. create a secrete.json file. In which we stored our private data like mnemonic and API key. Description is as follows:
     a. Mnemonic Phrase: This is the phrase that we were shown at the time of creation of metamask. This will be used to connect hardhat to our metamask accounts.
-    b. API Key: This will be used to verify the contract deployed on bscscan. 
+    b. API Key: This will be used to verify the contract deployed on bscscan.  [https://bscscan.com/myapikey]
+11. configure hardhat with bscscan to deploy our contract on bscscan. [https://docs.bnbchain.org/docs/hardhat-new/]
+
 
 
 
