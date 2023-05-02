@@ -13,7 +13,7 @@
     a. Mnemonic Phrase: This is the phrase that we were shown at the time of creation of metamask. This will be used to connect hardhat to our metamask accounts.
     b. API Key: This will be used to verify the contract deployed on bscscan.  [https://bscscan.com/myapikey]
 11. configure hardhat with bscscan to deploy our contract on bscscan. [https://docs.bnbchain.org/docs/hardhat-new/]
-
+12. create a repository named 'scripts', in which we will have store scripts to deploy contract on bscscan.
 
 
 
