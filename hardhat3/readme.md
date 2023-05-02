@@ -9,6 +9,10 @@
 7. create a repository named 'test' in which we will test the contract. For sample two tests are added.
 8. npm install --save-dev @nomicfoundation/hardhat-toolbox (to install hardhat-toolbox. This is mendatory to deploy contract in the hardhat context).
 9. require("@nomicfoundation/hardhat-toolbox"); (add this line to hardhat.config.js file)
+10. create a secrete.json file. In which we stored our private data like mnemonic and API key. Description is as follows:
+    a. Mnemonic Phrase: This is the phrase that we were shown at the time of creation of metamask. This will be used to connect hardhat to our metamask accounts.
+    b. API Key: This will be used to verify the contract deployed on bscscan. 
+
 
 
 ## Description of the project
