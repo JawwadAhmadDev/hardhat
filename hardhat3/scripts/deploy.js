@@ -5,10 +5,10 @@ async function main() {
   
     console.log("Account balance:", (await deployer.getBalance()).toString());
   
-    const Token = await ethers.getContractFactory("BEP20Token"); //Replace with name of your smart contract
-    const token = await Token.deploy();
+    const TestContract = await ethers.getContractFactory("TestContract"); //Replace with name of your smart contract
+    const testContract = await TestContract.deploy(['jawwad', 1]);
   
-    console.log("Token address:", token.address);
+    console.log("Test contract address:", testContract.address);
   }
   
   main()
