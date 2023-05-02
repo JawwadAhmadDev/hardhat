@@ -14,6 +14,7 @@
     b. API Key: This will be used to verify the contract deployed on bscscan.  [https://bscscan.com/myapikey]
 11. configure hardhat with bscscan to deploy our contract on bscscan. [https://docs.bnbchain.org/docs/hardhat-new/]
 12. create a repository named 'scripts', in which we will have store scripts to deploy contract on bscscan.
+13. npx hardhat run --network testnet scripts/deploy.js (run this command to deploy contract on bscscan testnet)
 
 
 
